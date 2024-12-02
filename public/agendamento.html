@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguiça Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="buscaServico(); datahoje(); buscaProfissionais();">
+<header>
+    <div class="header">
+        <img class="barber" src="imagens/barber.png" alt="">
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+        </div>
+        <img class="barber" src="imagens/barber.png" alt="">
+    </div>
+    <div class="barra_navegar">
+        <a href="index.html"><h3>Início</h3></a>
+        <a href="agendamento.html"><h3>Agendar</h3></a>
+        <a href="cliente.html"><h3>Clientes</h3></a>
+        <a href="profissional.html"><h3>Profissionais</h3></a>
+        <a href="servicocadastrar.html"><h3>Serviços</h3></a>
+    </div>
+</header>
+<main>
+    <span id="tabelaAgendamento_box"></span>
+    <div class="cad">
+        <h1>Agendar</h1>
+        <div class="input">
+            <h4>CPF Cliene</h4>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite o CPF" oninput="buscarClienteAgenda()">
+            <br />
+        </div>
+
+        <div class="input">
+            <h4>Nome Cliene: <span id="nomeCliente"></span></h4>
+        </div>
+
+        
+        <div class="input">
+            <h4>Serviço desejado</h4>
+            <select id="servicoSelecionado" name="servicoSelecionado" required>
+                <option value="">Selecione o Serviço</option>
+                <!-- opções de Clientes preenchidas vai aparecer aqui -->
+            </select>
+            <br>
+        </div>
+        <div class="input">
+            <h4>Data</h4>
+            <input type="date" name="data" id="data">
+            <br />
+        </div>
+        <div class="input">
+            <h4>Profissional</h4>
+            <select id="profissionalSelecionado" name="profissionalSelecionado" onchange="buscaHorariosDisponiveis()" required>
+                <option value="">Selecione o Profissional</option>
+                <!-- opções de Clientes preenchidas vai aparecer aqui -->
+            </select>
+            <br>
+        </div>
+        <div class="input">
+            <h4>Hora</h4>
+            <select id="horaSelecionada" name="horaSelecionada" required>
+                <option value="">Selecione o Horário</option>
+                <!-- Horários disponíveis serão preenchidos dinamicamente -->
+            </select>
+            <br>
+        </div>
+
+        <button class="cad_botao" onclick="cadastrarAgendamento(); limparTodosOsCampos();">Agendar</button><br>
+        <button class="cad_botao" onclick="buscarAgendamentos()">Consultar</button>
+    </div>
+    
+    
+</main>
+<footer>
+    <p>© 2024 Preguiça Sistemas</p>
+</footer>
+</body>
+</html>

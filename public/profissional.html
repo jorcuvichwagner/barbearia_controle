@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguiça Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img class="barber" src="imagens/barber.png" alt="">
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+        </div>
+        <img class="barber" src="imagens/barber.png" alt="">
+    </div>
+    <div class="barra_navegar">
+        <a href="index.html"><h3>Início</h3></a>
+        <a href="agendamento.html"><h3>Agendar</h3></a>
+        <a href="cliente.html"><h3>Clientes</h3></a>
+        <a href="profissional.html"><h3>Profissionais</h3></a>
+        <a href="servicocadastrar.html"><h3>Serviços</h3></a>
+    </div>
+</header>
+<main>
+    <div class="cad">
+        <h1>Profissionais</h1>
+        <div class="input">
+            <h4>CPF</h4>
+            <input type="text" id="cpf" placeholder="CPF:" onblur="verificarFuncionario()">
+            <br />
+        </div>
+        <div class="input">
+            <h4>Nome</h4>
+            <input type="text" id="nome" placeholder="Nome completo:" required>
+            <br />
+        </div>
+        <div class="input">
+            <h4>Telefone</h4>
+            <input type="text" id="telefone" placeholder="Número de telefone:" required>
+            <br />
+        </div>
+        <div class="input">
+            <h4>Email</h4>
+            <input type="text" id="email" placeholder="Email:" required>
+            <br />
+        </div>
+        <div class="input">
+            <h4>Data de Nascimento</h4>
+            <input type="date" name="data_nascimento" id="data_nascimento">
+            <br><br>
+        </div>
+        
+        <button class="cad_botao"type="button" id="btnAtualizar" onclick="atualizarFuncionario(); limparTodosOsCampos();" style="display: none; margin: auto;">Atualizar</button>
+        <button class="cad_botao"type="button" id="btnCadastrar" onclick="cadastrarFuncionario(); limparTodosOsCampos();" style="display: block; margin: auto;">Cadastrar</button><br>
+        <button class="cad_botao"type="button" onclick="limparTodosOsCampos()" style="display: block; margin: auto;">Cancelar</button><br>
+
+
+    </div>
+</main>
+<footer>
+    <p>© 2024 Preguiça Sistemas</p>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,256 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #c7c7c7;
+  background-size: cover;    
+
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  background: rgba(108, 108, 108, 0.456); /* fundo */
+  padding: 9px;
+  border: 4px solid #000;
+}
+.barber{
+  width: 3rem;
+
+}
+header img{
+  width: 10rem;
+}
+.barra_navegar{
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding-right: 4em;
+  padding-left: 4em;
+  height: 2em;
+  align-items: center;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.barra_navegar a{
+  text-decoration: none;
+  color: black;
+}
+.barra_navegar a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+.meio{
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 30em;
+  border-radius: 10px;
+  background: linear-gradient(45deg,#000, #555555,#555555);  /* fundo */
+  padding: 50px;
+  border: 5px double white; /* borda */
+
+}
+.meiocadastro{
+  height: 400px;
+  margin: 10px;
+  width: 400px;
+}
+.meio img{
+  width: 15em;
+}
+.botao a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
+}
+.botao{
+  border: 5px double black; /* borda */
+  width: 300px;
+  text-align: center;
+  background-color: #ffffff; /* fundo */
+
+}
+.botao:hover{
+  background-color: #f7f7f7 /* fundo */
+}
+.a_f1{
+  border: 4px solid #000000 ; /* borda */
+  border-radius: 10px;
+  width: 23rem;
+  text-align: center;
+  background-color: #5555559c; /* fundo */
+}
+.a_f1:hover{
+  border: 4px solid #000000 ; /* borda */
+  background-color: #ffffff; /* fundo */
+}
+.a_f{
+  padding: 1px;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+.cadastro{
+  margin: 0;
+  background-color: #c7c7c7;
+  background-size: cover;     
+}
+
+.cad{
+  border-radius: 10px;
+  background: linear-gradient(45deg,#878787, #555555,#878787);  /* fundo */
+  border: 10px double white;
+  padding: 30px;
+  align-self: center; 
+  justify-self: center;
+  text-align: center;
+  margin-top: 1em;
+  width: 30em;
+}
+
+.input{
+  text-align: left;
+  padding: 0,1em;
+}
+.input input{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  height: 3em;
+  width: 97%;
+  border-radius: 10px;
+  padding: 0.2em;
+  border: 3px solid black;
+}
+
+.input select{
+  background-color: rgb(184, 184, 184);
+  color: #000000;
+  height: 3.5em;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.2em;
+  border: 3px solid black;
+}
+.input h4{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 3px;
+  margin-left: 0.2em;
+}
+.input input:hover{
+  border: 3px solid white;
+}
+.cad_botao{
+  border: 4px solid #000; /* borda */
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 9px;
+  font-size: x-large;
+  background-color: #fcfcfc; /* fundo */
+}
+.cad_botao:hover{
+  border: 4px solid #ffffff; /* borda */
+  cursor: pointer;
+}
+
+
+.input select:hover{
+  border: 3px solid white;
+}
+
+.meio{
+  text-align: center;
+  color: white;
+}
+.consu_serv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.consu_serv input{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  height: 3em;
+  width: 40em;
+  border-radius: 10px;
+  padding: 0.2em;
+  border: 3px solid black;
+}
+.consu_serv button{
+  border: 4px solid #000000 ; /* borda */
+  border-radius: 10px;
+  width: 10rem;
+  text-align: center;
+  background-color: #ffffff; /* fundo */
+  margin: 1em;
+  cursor: pointer;
+}
+.main_tabela{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.tabela_servico{
+  background-color: #555555;
+  width: 80em;
+  padding: 1em;
+  border: 8px double white;
+  border-radius: 10px;
+}
+
+/* serviços */
+.historico{
+  display: flex;
+  justify-content: center;
+}
+.hist{
+  width: 80em;
+  border-radius: 10px;
+  background: linear-gradient(45deg,#878787, #555555,#878787);  /* fundo */
+  border: 10px double white;
+  padding: 30px;
+  text-align: center;
+  margin-top: 2em;
+}
+.hist_linha{
+  border: double 4px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.hist_linha h3{
+  width: 10em;
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.linha-par {
+  background-color: #f0f0f0; 
+}
+
+
+.linha-impar {
+  background-color: #bebebe;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px 0;
+  z-index: -1000; /* Garante que fique abaixo de outros elementos */
+}
+.meiocadastro img{
+  width: 100%;
+  border-radius: 5px;
+}

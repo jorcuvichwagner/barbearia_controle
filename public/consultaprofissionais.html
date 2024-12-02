@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <img class="barber" src="imagens/barber.png" alt="">
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+        </div>
+        <img class="barber" src="imagens/barber.png" alt="">
+    </div>
+    <div class="barra_navegar">
+        <a href="consultar.html"><h3>Consultar</h3></a>
+        <a href="agendamento.html"><h3>Agendar</h3></a>
+        <a href="cliente.html"><h3>Clientes</h3></a>
+        <a href="profissional.html"><h3>Profissionais</h3></a>
+        <a href="servicocadastrar.html"><h3>Serviços</h3></a>
+    </div>
+</header>
+<main class="main_tabela">
+    <div class="tabela_servico">
+        <div class="consu_serv">
+            <h1>Profissionais</h1>
+            <input type="text" id="consultarProf" placeholder="Digite o nome do profissional">
+            <button onclick="consultarProfissional()">Consultar</button>
+        </div>
+        <table id="tabelaProfissionais">
+            <thead>
+                <tr>
+                    <th>Nome do Profissional</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</main>
+</body>
+</html>
